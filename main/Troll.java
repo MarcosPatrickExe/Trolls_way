@@ -3,9 +3,9 @@ import states.State;
 
 
 public class Troll extends Agent{
-    short hunger=0;
-    short life=10;
-    Locations currentLocation;  
+    public short hunger=0;
+    public short life=10;
+    public Locations currentLocation;  
 
     Troll( State initialState ){
         super( initialState );
