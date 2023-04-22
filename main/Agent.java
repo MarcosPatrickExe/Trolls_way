@@ -10,13 +10,14 @@ public abstract class Agent{
         this.currentState = newState;
     }
 
-    protected void changeState(State newState){
+    public void changeState(State newState){
         // this.currentState.exit(this);
         this.currentState = newState;
         // this.currentState.enter(this);
     };
 
-    protected void update(){
+    public void update(){
         this.currentState.execute(this);
     };
+    
 }
